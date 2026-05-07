@@ -553,14 +553,14 @@ function renderQuoteSlide(index) {
 
   stage.style.opacity = '0';
   stage.style.transform = 'translateY(8px)';
-  portraitEl.style.opacity = '0';
+  if (portraitEl) portraitEl.style.opacity = '0';
 
   setTimeout(() => {
     stage.innerHTML = textHtml;
-    portraitEl.innerHTML = portraitHtml;
+    if (portraitEl) portraitEl.innerHTML = portraitHtml;
     stage.style.opacity = '1';
     stage.style.transform = 'translateY(0)';
-    portraitEl.style.opacity = '1';
+    if (portraitEl) portraitEl.style.opacity = '1';
   }, 50);
 
   if (dots) {
