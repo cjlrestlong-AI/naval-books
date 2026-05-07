@@ -3,7 +3,7 @@
    Provides offline support & caching
    ============================================ */
 
-const CACHE_NAME = 'naval-books-v1';
+const CACHE_NAME = 'naval-books-v2';
 const ASSETS_TO_CACHE = [
   '.',
   'index.html',
