@@ -1574,12 +1574,11 @@ header h1 {
 
 /* ---- Book Item Enhanced Hover ---- */
 .book-header {
-  transition: background 0.25s ease, padding-left 0.3s ease;
+  transition: background 0.25s ease;
 }
 
 .book-header:hover {
   background: rgba(255, 248, 239, 0.04);
-  padding-left: 26px;
 }
 
 .book-header:hover .book-title {
@@ -1591,8 +1590,11 @@ header h1 {
 }
 
 .book-cover {
-  perspective: 800px;
-  transition: box-shadow 0.4s ease;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: box-shadow 0.4s ease, overflow 0s;
+  perspective: 1000px;
 }
 
 .book-cover-inner {
@@ -1601,26 +1603,37 @@ header h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
-  transform: scale(1);
+  transform-origin: center left;
+  transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+
+.book-info {
+  transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   will-change: transform;
 }
 
 .book-item:hover .book-cover {
-  box-shadow: 10px 16px 40px rgba(18, 10, 7, 0.5),
-              -1px 0 0 rgba(255, 248, 239, 0.08) inset,
-              0 0 30px rgba(217, 184, 143, 0.12);
+  overflow: visible;
+  z-index: 20;
+  box-shadow: 0 0 40px rgba(18, 10, 7, 0.6),
+              0 0 60px rgba(217, 184, 143, 0.15),
+              -1px 0 0 rgba(255, 248, 239, 0.08) inset;
 }
 
 .book-item:hover .book-cover-inner {
-  transform: scale(1.08);
+  transform: scale(3);
+}
+
+.book-item:hover .book-info {
+  transform: translateX(165px);
 }
 
 .book-cover-inner img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .book-actions-top {
@@ -1827,7 +1840,6 @@ header h1 { font-size: 2.3rem; letter-spacing: 0.02em; }
 .book-header { padding: 16px 20px; }
 .book-cover { border-radius: 10px; width: 80px; height: 114px; }
 .book-cover::before { width: 3px; }
-.book-header:hover { background: rgba(255, 248, 239, 0.03); padding-left: 20px; }
 .book-header:hover .book-title { color: var(--text); }
 .book-title { font-size: 1.08rem; }
 .book-detail { padding: 0 20px 16px 118px; border-radius: 0 0 16px 16px; }
