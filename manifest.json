@@ -1,0 +1,27 @@
+{
+  "name": "Naval 書單追蹤器",
+  "short_name": "Naval書單",
+  "description": "閱讀進度管理與經典書庫 — 追蹤 Naval 推薦書目的閱讀進度",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#1f1511",
+  "theme_color": "#1f1511",
+  "orientation": "portrait-primary",
+  "lang": "zh-TW",
+  "icons": [
+    {
+      "src": "images/thinker-cutout.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/thinker-cutout.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["books", "education", "lifestyle"],
+  "screenshots": []
+}

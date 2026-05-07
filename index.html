@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN" translate="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== SEO Meta Tags ===== -->
+  <title>Naval 書單追蹤器 — 閱讀進度管理與經典書庫</title>
+  <meta name="description" content="書單涵蓋 Naval 推薦的非虛構、虛構文學、哲學靈性與經典書目。追蹤閱讀進度、查看閱讀日曆、每日一句名言啟發。">
+  <meta name="keywords" content="Naval, 書單, 閱讀進度, 書籍追蹤, 非虛構, 哲學, 經典書單, 閱讀日曆">
+  <meta name="author" content="Naval Books Atlas">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://cjlrestlong-ai.github.io/naval-books/">
+
+  <!-- ===== Open Graph ===== -->
+  <meta property="og:title" content="Naval 書單追蹤器 — 閱讀進度管理與經典書庫">
+  <meta property="og:description" content="涵蓋 Naval 推薦的非虛構、虛構文學、哲學靈性與經典書目。追蹤閱讀進度、查看閱讀日曆、每日一句名言啟發。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cjlrestlong-ai.github.io/naval-books/">
+  <meta property="og:image" content="https://cjlrestlong-ai.github.io/naval-books/images/thinker-cutout.png">
+  <meta property="og:locale" content="zh_TW">
+
+  <!-- ===== Twitter Card ===== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Naval 書單追蹤器 — 閱讀進度管理與經典書庫">
+  <meta name="twitter:description" content="涵蓋經典書目與閱讀進度追蹤，每日名言啟發。">
+  <meta name="twitter:image" content="https://cjlrestlong-ai.github.io/naval-books/images/thinker-cutout.png">
+
+  <!-- ===== PWA ===== -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1f1511">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Naval 書單">
+  <link rel="apple-touch-icon" href="images/thinker-cutout.png">
+
+  <!-- ===== Favicon ===== -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- ===== Fonts (Performance: preconnect + preload) ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+    media="print" onload="this.media='all'">
+
+  <!-- ===== Stylesheet ===== -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- ===== JSON-LD Structured Data ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Naval 書單追蹤器",
+    "url": "https://cjlrestlong-ai.github.io/naval-books/",
+    "description": "經典書單閱讀進度追蹤器，涵蓋非虛構、虛構文學、哲學靈性等分類。",
+    "inLanguage": "zh-TW",
+    "about": {
+      "@type": "BookSeries",
+      "name": "Naval 推薦書單",
+      "numberOfBooks": 50
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://cjlrestlong-ai.github.io/naval-books/" },
+      { "@type": "ListItem", "position": 2, "name": "非虛構類", "item": "https://cjlrestlong-ai.github.io/naval-books/#nonfiction" },
+      { "@type": "ListItem", "position": 3, "name": "虛構文學類", "item": "https://cjlrestlong-ai.github.io/naval-books/#fiction" },
+      { "@type": "ListItem", "position": 4, "name": "哲學與靈性類", "item": "https://cjlrestlong-ai.github.io/naval-books/#philosophy" },
+      { "@type": "ListItem", "position": 5, "name": "其他推薦", "item": "https://cjlrestlong-ai.github.io/naval-books/#others" }
+    ]
+  }
+  </script>
+
+  <!-- ===== Critical inline styles (above-fold) ===== -->
+  <style>
+    /* Critical path: prevent FOUC for above-fold content */
+    body { background: #1f1511; color: #f8efe2; min-height: 100vh; }
+    .container { max-width: 1180px; margin: 0 auto; padding: 28px 28px 36px; }
+  </style>
+</head>
+
+<body>
+  <!-- ===== Skip Link (Accessibility) ===== -->
+  <a href="#main-content" class="skip-link">跳到主要內容</a>
+
+  <!-- ===== Header ===== -->
+  <header class="container" role="banner">
+    <div class="brand-block">
+      <div class="brand-mark">
+        <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18">
+          <defs>
+            <linearGradient id="brandBook" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f4dec0"/>
+              <stop offset="55%" stop-color="#c89458"/>
+              <stop offset="100%" stop-color="#8a5a36"/>
+            </linearGradient>
+          </defs>
+          <path fill="url(#brandBook)" d="M5.5 4.8c0-1.2.97-2.18 2.18-2.18h8.64A2.68 2.68 0 0 1 19 5.3v13.94a.78.78 0 0 1-1.13.7 4.23 4.23 0 0 0-1.9-.44H7.68A2.18 2.18 0 0 1 5.5 17.3zm2.18-.62a.62.62 0 0 0-.62.62V17.3c0 .34.28.62.62.62h7.95c.66 0 1.3.1 1.8.28V5.3c0-.62-.5-1.12-1.11-1.12zm1.58 3.18h6.54a.78.78 0 0 1 0 1.56H9.26a.78.78 0 0 1 0-1.56m0 3.44h6.54a.78.78 0 0 1 0 1.56H9.26a.78.78 0 0 1 0-1.56"/>
+        </svg>
+        Naval Books Atlas
+      </div>
+      <div class="header-hero">
+        <div class="header-title-block">
+          <h1>Naval 書單追蹤器</h1>
+          <p class="header-copy">把書香、燈影與閱讀節奏收進同一間溫暖書房，讓每一次翻頁都像在深夜咖啡屋裡慢慢沉澱。</p>
+        </div>
+        <div class="header-statue">
+          <img src="images/thinker-cutout.png" alt="思考者雕像 - 象徵閱讀與沉思" loading="eager">
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="btn btn-calendar" onclick="openCalendar()" type="button" aria-label="開啟閱讀日曆">
+        <svg viewBox="0 0 24 24" aria-hidden="true" style="width:16px;height:16px;vertical-align:-3px;margin-right:8px">
+          <defs>
+            <linearGradient id="calIcon" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f6dfbe"/>
+              <stop offset="100%" stop-color="#b78356"/>
+            </linearGradient>
+          </defs>
+          <path fill="url(#calIcon)" d="M7 2.75a.75.75 0 0 1 .75.75V5h8.5V3.5a.75.75 0 0 1 1.5 0V5h.75A2.5 2.5 0 0 1 21 7.5v11A2.5 2.5 0 0 1 18.5 21h-13A2.5 2.5 0 0 1 3 18.5v-11A2.5 2.5 0 0 1 5.5 5h.75V3.5A.75.75 0 0 1 7 2.75M4.5 9.5v9a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1v-9zm3 2.25h2.5v2.5H7.5zm4.25 0h2.5v2.5h-2.5zm4.25 0h2.5v2.5H16z"/>
+        </svg>
+        閱讀日曆
+      </button>
+      <p class="header-note">閱讀進度會自動保存在當前瀏覽器裡。</p>
+    </div>
+  </header>
+
+  <!-- ===== Main Content ===== -->
+  <main class="container" id="main-content" role="main">
+
+    <!-- Dashboard -->
+    <div id="dashboard" class="dashboard" role="region" aria-label="儀表板概覽">
+      <div class="stats-grid" id="stats-grid" role="group" aria-label="統計數據"></div>
+      <div class="categories" id="categories" role="group" aria-label="書本分類"></div>
+    </div>
+
+    <!-- Category Detail Page -->
+    <div id="category-page" class="hidden" role="region" aria-label="分類書單詳情" aria-hidden="true"></div>
+
+    <!-- Calendar Page -->
+    <div id="calendar-page" class="hidden" role="region" aria-label="閱讀日曆" aria-hidden="true"></div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="container" role="contentinfo" style="margin-top:60px;padding-top:20px;border-top:1px solid var(--line);font-size:0.8rem;color:var(--gray);text-align:center">
+    <p>Naval Books Atlas &copy; 閱讀是一場與自己的對話。</p>
+  </footer>
+
+  <!-- ===== Calendar Tooltip ===== -->
+  <div class="cal-tooltip" id="cal-tooltip" aria-hidden="true" role="tooltip">
+    <img id="cal-tip-cover" style="width:56px;height:72px;border-radius:6px;margin-bottom:10px;display:block;object-fit:cover;background:#1a1a2e;border:1px solid rgba(255,255,255,0.1);box-shadow:0 2px 8px rgba(0,0,0,0.4)" alt="">
+    <div class="cal-tooltip-title" id="cal-tip-title"></div>
+    <div id="cal-tip-fallback" style="width:56px;height:72px;border-radius:6px;margin-bottom:10px;display:none;align-items:center;justify-content:center;font-size:0.7rem;color:rgba(255,255,255,0.9);font-weight:700;text-align:center;padding:6px;line-height:1.3;border:1px solid rgba(255,255,255,0.1)"></div>
+    <div class="cal-tooltip-meta" id="cal-tip-meta"></div>
+  </div>
+
+  <!-- ===== Script (deferred for performance) ===== -->
+  <script src="js/app.js" defer></script>
+</body>
+</html>
