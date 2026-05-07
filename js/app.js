@@ -18,73 +18,73 @@ const categories = [
     id: 'nonfiction', name: '📖 非虛構類', subtitle: '財富·認知·歷史·科學',
     color: '#4a9eff',
     books: [
-      { id: 'b01', title: '無窮的開始', author: '戴維·多伊奇', difficulty: 2, quote: '解釋一切的開端', cover_url: 'images/b01.jpg' },
-      { id: 'b02', title: '人類簡史', author: '尤瓦爾·赫拉利', difficulty: 2, quote: '從動物到上帝', cover_url: 'images/b02.jpg' },
-      { id: 'b03', title: '理性樂觀派', author: '馬特·里德利', difficulty: 2, quote: '進步來自交換', cover_url: 'images/b03.jpg' },
-      { id: 'b04', title: '基因組：生命之書23章', author: '馬特·里德利', difficulty: 3, quote: '人類的基因藍圖', cover_url: 'images/b04.jpg' },
-      { id: 'b05', title: '紅色皇后：性與人性的進化', author: '馬特·里德利', difficulty: 3, quote: '性作為進化驅動力', cover_url: 'images/b05.jpg' },
-      { id: 'b06', title: '美德的起源', author: '馬特·里德利', difficulty: 3, quote: '人性與協作的進化', cover_url: 'images/b06.jpg' },
-      { id: 'b07', title: '自下而上：萬物進化簡史', author: '馬特·里德利', difficulty: 3, quote: '從宇宙到意識的進化', cover_url: 'images/b07.jpg' },
-      { id: 'b08', title: '非對稱風險', author: '納西姆·塔勒布', difficulty: 4, quote: '風險共擔是核心', cover_url: 'images/b08.jpg' },
-      { id: 'b09', title: '黑天鵝', author: '納西姆·塔勒布', difficulty: 4, quote: '不可預測的極端事件', cover_url: 'images/b09.jpg' },
-      { id: 'b10', title: '反脆弱', author: '納西姆·塔勒布', difficulty: 4, quote: '從波動中獲益', cover_url: 'images/b10.jpg' },
-      { id: 'b11', title: '隨機漫步的傻瓜', author: '納西姆·塔勒布', difficulty: 3, quote: '運氣與隨機性', cover_url: 'images/b11.jpg' },
-      { id: 'b12', title: '肥尾效應', author: '納西姆·塔勒布', difficulty: 4, quote: '極端事件的概率', cover_url: 'images/b12.jpg' },
-      { id: 'b13', title: '塔勒布智慧箴言錄', author: '納西姆·塔勒布', difficulty: 3, quote: '反脆弱的智慧', cover_url: 'images/b13.jpg' },
-      { id: 'b14', title: '窮查理寶典', author: '查理·芒格', difficulty: 3, quote: '多元思維模型', cover_url: 'images/b14.jpg' },
-      { id: 'b15', title: '主權個人', author: '詹姆斯·戴爾·戴維森', difficulty: 4, quote: '信息時代的新人類', cover_url: 'images/b15.jpg' },
-      { id: 'b16', title: '合作的進化', author: '羅伯特·阿克塞爾羅德', difficulty: 3, quote: '重複囚徒困境', cover_url: 'images/b16.jpg' },
-      { id: 'b17', title: '費曼講物理：入門', author: '理查德·費曼', difficulty: 2, quote: '物理學的樂趣', cover_url: 'images/b17.jpg' },
-      { id: 'b18', title: '費曼物理學講義', author: '理查德·費曼', difficulty: 3, quote: '深度理解物理', cover_url: 'images/b18.jpg' },
-      { id: 'b19', title: '萬物解釋者', author: '蘭道爾·門羅', difficulty: 1, quote: '複雜事物的簡單解釋', cover_url: 'images/b19.jpg' },
-      { id: 'b20', title: '趣味物理尋答集', author: '劉易斯·愛潑斯坦', difficulty: 1, quote: '物理思維訓練', cover_url: 'images/b20.jpg' },
-      { id: 'b21', title: '七堂極簡物理課', author: '卡洛·羅韋利', difficulty: 2, quote: '詩意地理解物理', cover_url: 'images/b21.jpg' },
-      { id: 'b22', title: '現實不似你所見', author: '卡洛·羅韋利', difficulty: 3, quote: '量子引力的詩意', cover_url: 'images/b22.jpg' },
-      { id: 'b23', title: '歷史的教訓', author: '威爾·杜蘭特', difficulty: 2, quote: '文明興衰的啟示', cover_url: 'images/b23.jpg' },
-      { id: 'b24', title: '技術革命與金融資本', author: '卡蘿塔·佩蕾絲', difficulty: 4, quote: '技術革命的動力學', cover_url: 'images/b24.jpg' },
-      { id: 'b25', title: '策略家的博弈', author: '阿維納什·迪克西特', difficulty: 4, quote: '博弈論與策略思維', cover_url: 'images/b25.jpg' },
-      { id: 'b26', title: '生命的躍升', author: '尼克·萊恩', difficulty: 3, quote: '生命進化的關鍵時刻', cover_url: 'images/b26.jpg' }
+      { id: 'b01', title: '無窮的開始', author: '戴維·多伊奇', rating: 8.8, difficulty: 2, quote: '解釋一切的開端', desc: '多伊奇以深刻的洞察力探討了人類知識的無限可能，從科學、哲學到人工智能，為我們揭示了一個無窮擴展的知識宇宙。', cover_url: 'images/b01.jpg' },
+      { id: 'b02', title: '人類簡史', author: '尤瓦爾·赫拉利', rating: 9.1, difficulty: 2, quote: '從動物到上帝', desc: '赫拉利以宏大的視角回顧了人類從認知革命到科學革命的歷史，揭示了金錢、帝國和宗教如何塑造了今日世界。', cover_url: 'images/b02.jpg' },
+      { id: 'b03', title: '理性樂觀派', author: '馬特·里德利', rating: 7.8, difficulty: 2, quote: '進步來自交換', desc: '里德利用大量數據證明人類社會在每一個維度都在進步，樂觀不是天真，而是基於歷史事實的理性判斷。', cover_url: 'images/b03.jpg' },
+      { id: 'b04', title: '基因組：生命之書23章', author: '馬特·里德利', rating: 8.5, difficulty: 3, quote: '人類的基因藍圖', desc: '通過23對染色體的故事，里德利帶領我們探索基因如何影響人類的命運、性格和歷史。', cover_url: 'images/b04.jpg' },
+      { id: 'b05', title: '紅色皇后：性與人性的進化', author: '馬特·里德利', rating: 8.1, difficulty: 3, quote: '性作為進化驅動力', desc: '以「紅色皇后」理論探討性選擇如何推動物種進化，揭示了人性深處的進化密碼。', cover_url: 'images/b05.jpg' },
+      { id: 'b06', title: '美德的起源', author: '馬特·里德利', rating: 8.0, difficulty: 3, quote: '人性與協作的進化', desc: '從生物學和人類學角度探討了人類美德、信任和合作的進化根源，顛覆了「人性本惡」的傳統觀念。', cover_url: 'images/b06.jpg' },
+      { id: 'b07', title: '自下而上：萬物進化簡史', author: '馬特·里德利', rating: 8.2, difficulty: 3, quote: '從宇宙到意識的進化', desc: '從宇宙、生命、文化到經濟，里德利論證了一切複雜系統都是由下而上演化而成，而非自上而下設計。', cover_url: 'images/b07.jpg' },
+      { id: 'b08', title: '非對稱風險', author: '納西姆·塔勒布', rating: 8.1, difficulty: 4, quote: '風險共擔是核心', desc: '塔勒布探討了風險、責任與決策之間的深刻關係，強調「沒有風險共擔就沒有進步」的核心思想。', cover_url: 'images/b08.jpg' },
+      { id: 'b09', title: '黑天鵝', author: '納西姆·塔勒布', rating: 8.3, difficulty: 4, quote: '不可預測的極端事件', desc: '塔勒布提出「黑天鵝」概念，揭示那些罕見但影響巨大的極端事件如何塑造了我們的歷史和世界。', cover_url: 'images/b09.jpg' },
+      { id: 'b10', title: '反脆弱', author: '納西姆·塔勒布', rating: 8.6, difficulty: 4, quote: '從波動中獲益', desc: '塔勒布提出了「反脆弱」的概念——那些在混亂和壓力中反而變得更好的系統，教你如何在不确定性中受益。', cover_url: 'images/b10.jpg' },
+      { id: 'b11', title: '隨機漫步的傻瓜', author: '納西姆·塔勒布', rating: 8.0, difficulty: 3, quote: '運氣與隨機性', desc: '揭示金融市場和生活中隨機性與運氣的作用，教我們如何區分運氣和技巧。', cover_url: 'images/b11.jpg' },
+      { id: 'b12', title: '肥尾效應', author: '納西姆·塔勒布', rating: 7.1, difficulty: 4, quote: '極端事件的概率', desc: '塔勒布深入探討了統計學中「肥尾」現象，解釋為什麼極端事件比我們想像的更頻繁發生。', cover_url: 'images/b12.jpg' },
+      { id: 'b13', title: '塔勒布智慧箴言錄', author: '納西姆·塔勒布', rating: 8.2, difficulty: 3, quote: '反脆弱的智慧', desc: '塔勒布最具代表性的思想濃縮，以犀利的箴言形式呈現他對風險、隨機性和生活的獨特見解。', cover_url: 'images/b13.jpg' },
+      { id: 'b14', title: '窮查理寶典', author: '查理·芒格', rating: 8.6, difficulty: 3, quote: '多元思維模型', desc: '收錄了查理·芒格一生的智慧，從心理學、經濟學到物理學，教你用多元思維模型做出更好的決策。', cover_url: 'images/b14.jpg' },
+      { id: 'b15', title: '主權個人', author: '詹姆斯·戴爾·戴維森', rating: 7.0, difficulty: 4, quote: '信息時代的新人類', desc: '預測了信息時代將如何瓦解民族國家體系，催生全新的社會結構和個體自由形態。', cover_url: 'images/b15.jpg' },
+      { id: 'b16', title: '合作的進化', author: '羅伯特·阿克塞爾羅德', rating: 8.4, difficulty: 3, quote: '重複囚徒困境', desc: '通過著名的「囚徒困境」電腦模擬，證明了合作如何在沒有中央權威的情況下自發湧現和進化。', cover_url: 'images/b16.jpg' },
+      { id: 'b17', title: '費曼講物理：入門', author: '理查德·費曼', rating: 9.1, difficulty: 2, quote: '物理學的樂趣', desc: '費曼以生動幽默的語言講述物理學的基本概念，讓普通人也能感受到物理學的美麗與樂趣。', cover_url: 'images/b17.jpg' },
+      { id: 'b18', title: '費曼物理學講義', author: '理查德·費曼', rating: 9.5, difficulty: 3, quote: '深度理解物理', desc: '費曼在加州理工學院的經典物理學講義，被譽為20世紀最偉大的物理學教科書。', cover_url: 'images/b18.jpg' },
+      { id: 'b19', title: '萬物解釋者', author: '蘭道爾·門羅', rating: 8.2, difficulty: 1, quote: '複雜事物的簡單解釋', desc: '用最簡單的詞彙和精美的圖解，解釋地球上最複雜的事物和概念，適合所有年齡層。', cover_url: 'images/b19.jpg' },
+      { id: 'b20', title: '趣味物理尋答集', author: '劉易斯·愛潑斯坦', rating: 8.5, difficulty: 1, quote: '物理思維訓練', desc: '以生活中的趣味問題為切入點，引導讀者用物理思維去思考和解答日常謎題。', cover_url: 'images/b20.jpg' },
+      { id: 'b21', title: '七堂極簡物理課', author: '卡洛·羅韋利', rating: 8.6, difficulty: 2, quote: '詩意地理解物理', desc: '用詩意的語言和極簡的篇幅，為讀者勾勒出現代物理學的七個核心概念，優美而深刻。', cover_url: 'images/b21.jpg' },
+      { id: 'b22', title: '現實不似你所見', author: '卡洛·羅韋利', rating: 8.8, difficulty: 3, quote: '量子引力的詩意', desc: '帶領讀者探索量子引力的奧秘，挑戰我們對時空和現實的傳統認知。', cover_url: 'images/b22.jpg' },
+      { id: 'b23', title: '歷史的教訓', author: '威爾·杜蘭特', rating: 8.3, difficulty: 2, quote: '文明興衰的啟示', desc: '杜蘭特夫婦從歷史的宏大敘事中提煉出關於人性、文明和社會的永恆教訓。', cover_url: 'images/b23.jpg' },
+      { id: 'b24', title: '技術革命與金融資本', author: '卡蘿塔·佩蕾絲', rating: 8.0, difficulty: 4, quote: '技術革命的動力學', desc: '分析了技術革命與金融資本之間的反覆循環關係，揭示了經濟發展的深層規律。', cover_url: 'images/b24.jpg' },
+      { id: 'b25', title: '策略家的博弈', author: '阿維納什·迪克西特', rating: 8.2, difficulty: 4, quote: '博弈論與策略思維', desc: '用博弈論的思維框架分析日常生活中的策略互動，教你如何在競爭與合作中做出最佳選擇。', cover_url: 'images/b25.jpg' },
+      { id: 'b26', title: '生命的躍升', author: '尼克·萊恩', rating: 8.7, difficulty: 3, quote: '生命進化的關鍵時刻', desc: '揭示了生命進化史上十個最偉大的發明，從DNA到光合作用，從意識到死亡，展現生命的神奇。', cover_url: 'images/b26.jpg' }
     ]
   },
   {
     id: 'fiction', name: '✦ 虛構文學類', subtitle: '科幻·奇幻·文學經典',
     color: '#c07aff',
     books: [
-      { id: 'c01', title: '你一生的故事', author: '特德·姜', difficulty: 2, quote: '預知未來的代價', cover_url: 'images/c01.jpg' },
-      { id: 'c02', title: '三體', author: '劉慈欣', difficulty: 3, quote: '黑暗森林法則', cover_url: 'images/c02.jpg' },
-      { id: 'c03', title: '沙丘', author: '弗蘭克·赫伯特', difficulty: 3, quote: '權力與信仰的史詩', cover_url: 'images/c03.jpg' },
-      { id: 'c04', title: '指環王', author: 'J.R.R.托爾金', difficulty: 3, quote: '中土世界的傳奇', cover_url: 'images/c04.jpg' },
-      { id: 'c05', title: '銀河系漫遊指南', author: '道格拉斯·亞當斯', difficulty: 2, quote: '生命、宇宙與一切的終極答案', cover_url: 'images/c05.jpg' },
-      { id: 'c06', title: '源泉', author: '安·蘭德', difficulty: 4, quote: '個人主義的贊歌', cover_url: 'images/c06.jpg' },
-      { id: 'c07', title: '阿特拉斯聳聳肩', author: '安·蘭德', difficulty: 4, quote: '創造者的價值', cover_url: 'images/c07.jpg' },
-      { id: 'c08', title: '悉達多', author: '赫爾曼·黑塞', difficulty: 2, quote: '成為自己的道路', cover_url: 'images/c08.jpg' }
+      { id: 'c01', title: '你一生的故事', author: '特德·姜', rating: 8.7, difficulty: 2, quote: '預知未來的代價', desc: '如果能夠預知未來，你還會做出同樣的選擇嗎？特德·姜以獨特的語言學視角探索自由意志與宿命的命題。', cover_url: 'images/c01.jpg' },
+      { id: 'c02', title: '三體', author: '劉慈欣', rating: 8.8, difficulty: 3, quote: '黑暗森林法則', desc: '劉慈欣的史詩級科幻巨作，描繪了人類與三體文明之間的接觸與對抗，重新定義了中國科幻文學的高度。', cover_url: 'images/c02.jpg' },
+      { id: 'c03', title: '沙丘', author: '弗蘭克·赫伯特', rating: 8.3, difficulty: 3, quote: '權力與信仰的史詩', desc: '在浩瀚的沙漠星球上，關於權力、信仰、生態和命運的史詩故事，科幻文學史上不朽的經典。', cover_url: 'images/c03.jpg' },
+      { id: 'c04', title: '指環王', author: 'J.R.R.托爾金', rating: 9.0, difficulty: 3, quote: '中土世界的傳奇', desc: '托爾金創造的中土世界史詩，講述了平凡的力量如何改變世界的命運，現代奇幻文學的奠基之作。', cover_url: 'images/c04.jpg' },
+      { id: 'c05', title: '銀河系漫遊指南', author: '道格拉斯·亞當斯', rating: 8.0, difficulty: 2, quote: '生命、宇宙與一切的終極答案', desc: '史上最幽默的科幻小說，英國式幽默與科幻的完美結合，告訴你生命、宇宙和一切的答案是「42」。', cover_url: 'images/c05.jpg' },
+      { id: 'c06', title: '源泉', author: '安·蘭德', rating: 8.6, difficulty: 4, quote: '個人主義的贊歌', desc: '以天才建築師為主角，歌頌個人創造力和獨立精神，是安·蘭德客觀主義哲學的文學宣言。', cover_url: 'images/c06.jpg' },
+      { id: 'c07', title: '阿特拉斯聳聳肩', author: '安·蘭德', rating: 8.1, difficulty: 4, quote: '創造者的價值', desc: '當社會的創造者們集體罷工，世界會變成什麼樣？一部關於資本主義與個人主義的宏大寓言。', cover_url: 'images/c07.jpg' },
+      { id: 'c08', title: '悉達多', author: '赫爾曼·黑塞', rating: 9.1, difficulty: 2, quote: '成為自己的道路', desc: '古印度貴族子弟悉達多求道的一生，黑塞以詩意的筆觸探討了自我、覺悟與生命的真諦。', cover_url: 'images/c08.jpg' }
     ]
   },
   {
     id: 'philosophy', name: '🧘 哲學與靈性類', subtitle: '冥想·存在·東方智慧',
     color: '#3dd68c',
     books: [
-      { id: 'd01', title: '沉思錄', author: '馬可·奧勒留', difficulty: 2, quote: '斯多葛主義的實踐', cover_url: 'images/d01.jpg' },
-      { id: 'd02', title: '生命之書', author: '克里希那穆提', difficulty: 3, quote: '觀察與覺察', cover_url: 'images/d02.jpg' },
-      { id: 'd03', title: '清醒地活', author: '邁克爾·辛格', difficulty: 3, quote: '超越你的頭腦', cover_url: 'images/d03.jpg' },
-      { id: 'd04', title: '當下的力量', author: '埃克哈特·托利', difficulty: 3, quote: '此刻的覺醒', cover_url: 'images/d04.jpg' },
-      { id: 'd05', title: '新世界：靈性的覺醒', author: '埃克哈特·托利', difficulty: 3, quote: '揚升的意識', cover_url: 'images/d05.jpg' },
-      { id: 'd06', title: '傑德·麥肯納靈性開悟三部曲', author: '傑德·麥肯納', difficulty: 4, quote: '開悟的真相', cover_url: 'images/d06.jpg' },
-      { id: 'd07', title: '道德經', author: '老子', difficulty: 2, quote: '道法自然', cover_url: 'images/d07.jpg' },
-      { id: 'd08', title: '薄伽梵歌', author: '薄伽梵歌', difficulty: 3, quote: '行動的哲學', cover_url: 'images/d08.jpg' }
+      { id: 'd01', title: '沉思錄', author: '馬可·奧勒留', rating: 8.6, difficulty: 2, quote: '斯多葛主義的實踐', desc: '羅馬皇帝馬可·奧勒留的個人哲學筆記，斯多葛主義的經典之作，教人如何在混亂中保持內心的平靜。', cover_url: 'images/d01.jpg' },
+      { id: 'd02', title: '生命之書', author: '克里希那穆提', rating: 8.9, difficulty: 3, quote: '觀察與覺察', desc: '克里希那穆提關於覺察、自由與真實的每日教誨，引導讀者超越思維的限制，覺悟生命的本質。', cover_url: 'images/d02.jpg' },
+      { id: 'd03', title: '清醒地活', author: '邁克爾·辛格', rating: 8.4, difficulty: 3, quote: '超越你的頭腦', desc: '引領讀者覺察內心的聲音，超越思維的束縛，找到真正的自我和內在的平靜。', cover_url: 'images/d03.jpg' },
+      { id: 'd04', title: '當下的力量', author: '埃克哈特·托利', rating: 8.3, difficulty: 3, quote: '此刻的覺醒', desc: '教導人們如何擺脫過去和未來的困擾，專注於當下的力量，實現心靈的覺醒與轉化。', cover_url: 'images/d04.jpg' },
+      { id: 'd05', title: '新世界：靈性的覺醒', author: '埃克哈特·托利', rating: 8.6, difficulty: 3, quote: '揚升的意識', desc: '超越自我（ego）的限制，進入一個全新的意識層次，為個人和世界帶來真正的轉變。', cover_url: 'images/d05.jpg' },
+      { id: 'd06', title: '傑德·麥肯納靈性開悟三部曲', author: '傑德·麥肯納', rating: 8.4, difficulty: 4, quote: '開悟的真相', desc: '以毫不妥協的態度揭開靈性開悟的神秘面紗，直指真相，打破一切靈性幻象。', cover_url: 'images/d06.jpg' },
+      { id: 'd07', title: '道德經', author: '老子', rating: 9.2, difficulty: 2, quote: '道法自然', desc: '中國哲學的源頭，短短五千言濃縮了老子對天道、人道和治道的深邃智慧，影響了東方文明兩千年。', cover_url: 'images/d07.jpg' },
+      { id: 'd08', title: '薄伽梵歌', author: '薄伽梵歌', rating: 8.6, difficulty: 3, quote: '行動的哲學', desc: '印度最偉大的哲學史詩之一，以戰場對話的形式探討了責任、行動與解脫的深刻命題。', cover_url: 'images/d08.jpg' }
     ]
   },
   {
     id: 'others', name: '🌟 其他推薦', subtitle: '人物傳記·學習方法·思維模型',
     color: '#f5a623',
     books: [
-      { id: 'e01', title: '愛因斯坦傳', author: '沃爾特·艾薩克森', difficulty: 2, quote: '好奇心的力量', cover_url: 'images/e01.jpg' },
-      { id: 'e02', title: '富蘭克林傳', author: '沃爾特·艾薩克森', difficulty: 2, quote: '自我塑造的典範', cover_url: 'images/e02.jpg' },
-      { id: 'e03', title: '學習之道', author: '芭芭拉·奧克利', difficulty: 2, quote: '從思維模式到學習方法', cover_url: 'images/e03.jpg' },
-      { id: 'e04', title: '刻意練習', author: '安德斯·艾利克森', difficulty: 2, quote: '精通的路徑', cover_url: 'images/e04.jpg' },
-      { id: 'e05', title: '思考，快與慢', author: '丹尼爾·卡尼曼', difficulty: 3, quote: '雙系統思維', cover_url: 'images/e05.jpg' },
-      { id: 'e06', title: '影響力', author: '羅伯特·西奧迪尼', difficulty: 3, quote: '說服的心理學', cover_url: 'images/e06.jpg' },
-      { id: 'e07', title: '學會提問', author: '尼爾·布朗', difficulty: 2, quote: '批判性思維入門', cover_url: 'images/e07.jpg' }
+      { id: 'e01', title: '愛因斯坦傳', author: '沃爾特·艾薩克森', rating: 8.6, difficulty: 2, quote: '好奇心的力量', desc: '艾薩克森以細膩的筆觸還原了愛因斯坦的傳奇一生，展現了好奇心和創造力如何改變了人類對宇宙的認知。', cover_url: 'images/e01.jpg' },
+      { id: 'e02', title: '富蘭克林傳', author: '沃爾特·艾薩克森', rating: 8.5, difficulty: 2, quote: '自我塑造的典範', desc: '美國國父富蘭克林從印刷學徒到偉大科學家、政治家、發明家的傳奇人生，自我完善的典範。', cover_url: 'images/e02.jpg' },
+      { id: 'e03', title: '學習之道', author: '芭芭拉·奧克利', rating: 8.3, difficulty: 2, quote: '從思維模式到學習方法', desc: '結合認知科學和實踐經驗，揭示了高效學習的秘密，教你如何掌握任何一門學科。', cover_url: 'images/e03.jpg' },
+      { id: 'e04', title: '刻意練習', author: '安德斯·艾利克森', rating: 7.8, difficulty: 2, quote: '精通的路徑', desc: '顛覆「天賦決定成就」的傳統觀念，用大量研究證明刻意練習才是通往卓越的唯一道路。', cover_url: 'images/e04.jpg' },
+      { id: 'e05', title: '思考，快與慢', author: '丹尼爾·卡尼曼', rating: 8.1, difficulty: 3, quote: '雙系統思維', desc: '諾貝爾獎得主卡尼曼揭示了人類思維的兩個系統——直覺與理性，以及它們如何影響我們的判斷與決策。', cover_url: 'images/e05.jpg' },
+      { id: 'e06', title: '影響力', author: '羅伯特·西奧迪尼', rating: 8.6, difficulty: 3, quote: '說服的心理學', desc: '經典的說服心理學著作，揭示了六大影響力原理，教你如何識別和運用它們。', cover_url: 'images/e06.jpg' },
+      { id: 'e07', title: '學會提問', author: '尼爾·布朗', rating: 8.2, difficulty: 2, quote: '批判性思維入門', desc: '系統地介紹了批判性思維的核心理念和方法，幫助讀者成為更獨立、更有洞察力的思考者。', cover_url: 'images/e07.jpg' }
     ]
   }
 ];
@@ -619,6 +619,7 @@ function buildBookItem(book, accentColor) {
   const isDone = !!log && !!log.endDate;
   const readingDays = getReadingDays(book.id);
   const placeholderBg = getPlaceholderColor(book.title);
+  const ratingColor = book.rating >= 9 ? '#ff6b35' : book.rating >= 8.5 ? '#e8a040' : book.rating >= 8 ? '#d4a040' : '#a09078';
 
   let actionsHtml = '';
   if (!log) {
@@ -660,7 +661,10 @@ function buildBookItem(book, accentColor) {
         }
       </div>
       <div class="book-info">
-        <div class="book-title">${escapeHTML(book.title)}</div>
+        <div class="book-title-row">
+          <div class="book-title">${escapeHTML(book.title)}</div>
+          <span class="book-rating" style="color:${ratingColor}">⭐ ${book.rating}</span>
+        </div>
         <div class="book-author">${escapeHTML(book.author)}</div>
         <div class="book-tags">
           <span class="tag tag-difficulty" aria-label="難度 ${book.difficulty} / 5">${stars(book.difficulty)}</span>
@@ -673,6 +677,7 @@ function buildBookItem(book, accentColor) {
     </div>
     <div class="book-detail" id="detail-${book.id}" role="region" aria-label="${escapeHTML(book.title)} 詳情">
       <div class="quote">"${escapeHTML(book.quote)}"</div>
+      ${book.desc ? `<div class="book-desc">📖 ${escapeHTML(book.desc)}</div>` : ''}
       <div class="reading-actions" id="reading-actions-${book.id}">${actionsHtml}</div>
       <div class="detail-row" style="margin-top:12px">
         <span class="detail-label" id="status-label-${book.id}">狀態</span>

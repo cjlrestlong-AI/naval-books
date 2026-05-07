@@ -946,6 +946,12 @@ header h1 {
   min-width: 0;
 }
 
+.book-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .book-title {
   font-family: "Georgia", "Times New Roman", "Songti SC", serif;
   font-size: 1.18rem;
@@ -954,12 +960,32 @@ header h1 {
   overflow: hidden;
   text-overflow: ellipsis;
   letter-spacing: 0.02em;
+  flex: 1;
+  min-width: 0;
+}
+
+.book-rating {
+  font-size: 0.82rem;
+  font-weight: 700;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .book-author {
   color: #a7b2c1;
   font-size: 0.84rem;
   margin-top: 5px;
+}
+
+.book-desc {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: #d4c8b4;
+  padding: 12px 14px;
+  margin: 8px 0 12px;
+  background: rgba(15, 8, 6, 0.5);
+  border-radius: 10px;
+  border-left: 2px solid rgba(212, 160, 64, 0.25);
 }
 
 .book-tags {
