@@ -590,18 +590,27 @@ async function hydrateQuoteHero() {
   if (!shell) return;
 
   const cached = loadJSON(DAILY_QUOTES_KEY, null);
-  if (!quoteLoadPromise || !cached || cached.date !== todayStr()) {
-    quoteLoadPromise = buildDailyQuoteDeck();
+  if (cached && cached.date === todayStr() && Array.isArray(cached.deck) && cached.deck.length) {
+    activeQuoteDeck = cached.deck;
+    renderQuoteSlide(0);
+    startQuoteRotation();
+    return;
   }
 
-  try {
-    activeQuoteDeck = await quoteLoadPromise;
-  } catch (e) {
-    console.warn('Failed to load quotes, using fallback:', e.message);
-    activeQuoteDeck = getFallbackQuoteDeck();
-  }
+  activeQuoteDeck = getFallbackQuoteDeck();
   renderQuoteSlide(0);
   startQuoteRotation();
+
+  if (!quoteLoadPromise) {
+    quoteLoadPromise = buildDailyQuoteDeck().catch(() => {});
+  }
+  quoteLoadPromise.then(deck => {
+    if (deck && deck.length) {
+      activeQuoteDeck = deck;
+      renderQuoteSlide(0);
+      startQuoteRotation();
+    }
+  });
 }
 
 /* ============================================
