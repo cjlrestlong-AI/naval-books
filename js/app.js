@@ -672,12 +672,11 @@ function buildBookItem(book, accentColor) {
           ${isReading ? '<span class="tag" style="background:#3e2d24;color:#e8d2b3">閱讀中</span>' : ''}
           ${isDone ? '<span class="tag" style="background:#304131;color:#d9ead1">已讀完</span>' : ''}
         </div>
+        ${book.desc ? `<div class="book-desc-short">${escapeHTML(book.desc)}</div>` : ''}
       </div>
       <span class="expand-icon" aria-hidden="true">▼</span>
     </div>
     <div class="book-detail" id="detail-${book.id}" role="region" aria-label="${escapeHTML(book.title)} 詳情">
-      <div class="quote">"${escapeHTML(book.quote)}"</div>
-      ${book.desc ? `<div class="book-desc">📖 ${escapeHTML(book.desc)}</div>` : ''}
       <div class="reading-actions" id="reading-actions-${book.id}">${actionsHtml}</div>
       <div class="detail-row" style="margin-top:12px">
         <span class="detail-label" id="status-label-${book.id}">狀態</span>
