@@ -1590,15 +1590,45 @@ header h1 {
   transition: color 0.3s ease;
 }
 
-/* ---- Book Cover Glow on Hover ---- */
-.book-item:hover .book-cover {
-  box-shadow: 10px 16px 32px rgba(18, 10, 7, 0.34),
-              -1px 0 0 rgba(255, 248, 239, 0.05) inset,
-              0 0 20px rgba(217, 184, 143, 0.08);
+.book-cover {
+  perspective: 800px;
+  transition: box-shadow 0.4s ease;
 }
 
-.book-cover {
-  transition: box-shadow 0.4s ease, transform 0.4s ease;
+.book-cover-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+  transform: scale(1);
+  will-change: transform;
+}
+
+.book-item:hover .book-cover {
+  box-shadow: 10px 16px 40px rgba(18, 10, 7, 0.5),
+              -1px 0 0 rgba(255, 248, 239, 0.08) inset,
+              0 0 30px rgba(217, 184, 143, 0.12);
+}
+
+.book-item:hover .book-cover-inner {
+  transform: scale(1.08);
+}
+
+.book-cover-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.book-actions-top {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 /* ---- Quote Fade Enhancement ---- */
@@ -1800,8 +1830,8 @@ header h1 { font-size: 2.3rem; letter-spacing: 0.02em; }
 .book-header:hover { background: rgba(255, 248, 239, 0.03); padding-left: 20px; }
 .book-header:hover .book-title { color: var(--text); }
 .book-title { font-size: 1.08rem; }
-.book-detail { padding: 0 20px 18px 118px; border-radius: 0 0 16px 16px; }
-.book-item.open .book-detail { padding: 0 20px 18px 118px; }
+.book-detail { padding: 0 20px 16px 118px; border-radius: 0 0 16px 16px; }
+.book-item.open .book-detail { padding: 0 20px 16px 118px; }
 
 /* ---- Quote Block - clean ---- */
 .quote {

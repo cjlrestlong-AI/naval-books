@@ -649,16 +649,18 @@ function buildBookItem(book, accentColor) {
       aria-expanded="false"
       aria-controls="detail-${book.id}">
       <div class="book-cover">
-        ${coverUrl
-          ? `<img id="cover-${book.id}" src="${coverUrl}" alt="《${book.title}》封面" loading="lazy"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-             <div class="cover-placeholder" style="display:none;background:${placeholderBg}" aria-hidden="true">
-               <span>${book.title}</span>
-             </div>`
-          : `<div class="cover-placeholder" style="display:flex;background:${placeholderBg}" aria-hidden="true">
-               <span>${book.title}</span>
-             </div>`
-        }
+        <div class="book-cover-inner">
+          ${coverUrl
+            ? `<img id="cover-${book.id}" src="${coverUrl}" alt="《${book.title}》封面" loading="lazy"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+               <div class="cover-placeholder" style="display:none;background:${placeholderBg}" aria-hidden="true">
+                 <span>${book.title}</span>
+               </div>`
+            : `<div class="cover-placeholder" style="display:flex;background:${placeholderBg}" aria-hidden="true">
+                 <span>${book.title}</span>
+               </div>`
+          }
+        </div>
       </div>
       <div class="book-info">
         <div class="book-title-row">
@@ -673,12 +675,12 @@ function buildBookItem(book, accentColor) {
           ${isDone ? '<span class="tag" style="background:#304131;color:#d9ead1">已讀完</span>' : ''}
         </div>
         ${book.desc ? `<div class="book-desc-short">${escapeHTML(book.desc)}</div>` : ''}
+        <div class="book-actions-top" id="actions-top-${book.id}">${actionsHtml}</div>
       </div>
       <span class="expand-icon" aria-hidden="true">▼</span>
     </div>
     <div class="book-detail" id="detail-${book.id}" role="region" aria-label="${escapeHTML(book.title)} 詳情">
-      <div class="reading-actions" id="reading-actions-${book.id}">${actionsHtml}</div>
-      <div class="detail-row" style="margin-top:12px">
+      <div class="detail-row">
         <span class="detail-label" id="status-label-${book.id}">狀態</span>
         <select class="status-select" aria-labelledby="status-label-${book.id}"
           onchange="updateStatus('${book.id}', this.value)">
