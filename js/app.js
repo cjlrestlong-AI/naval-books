@@ -91,16 +91,16 @@ const categories = [
 
 /* ---- Fallback Quotes ---- */
 const fallbackQuotes = [
-  { id: 'fb-01', content: 'We suffer more often in imagination than in reality.', translation: '我们往往更多地受苦于想象，而不是现实。', author: 'Seneca' },
-  { id: 'fb-02', content: 'The happiness of your life depends upon the quality of your thoughts.', translation: '你一生的幸福，取决于你思想的质量。', author: 'Marcus Aurelius' },
-  { id: 'fb-03', content: 'No man is free who is not master of himself.', translation: '不能掌握自己的人，谈不上自由。', author: 'Epictetus' },
-  { id: 'fb-04', content: 'He who has a why to live can bear almost any how.', translation: '知道为何而活的人，几乎可以承受任何一种生活方式。', author: 'Friedrich Nietzsche' },
-  { id: 'fb-05', content: 'The unexamined life is not worth living.', translation: '未经省察的人生，不值得过。', author: 'Socrates' },
-  { id: 'fb-06', content: 'Nature does not hurry, yet everything is accomplished.', translation: '大自然从不匆忙，但一切都能完成。', author: 'Laozi' },
-  { id: 'fb-07', content: 'Knowing yourself is the beginning of all wisdom.', translation: '认识自己，是一切智慧的开端。', author: 'Aristotle' },
-  { id: 'fb-08', content: 'The whole future lies in uncertainty: live immediately.', translation: '整个未来都在不确定之中，所以请立刻生活。', author: 'Seneca' },
-  { id: 'fb-09', content: 'It is not length of life, but depth of life.', translation: '人生重要的不是长度，而是深度。', author: 'Ralph Waldo Emerson' },
-  { id: 'fb-10', content: 'The soul becomes dyed with the color of its thoughts.', translation: '灵魂会染上它所思之物的颜色。', author: 'Marcus Aurelius' }
+  { id: 'fb-01', content: 'We suffer more often in imagination than in reality.', translation: '我们往往更多地受苦于想象，而不是现实。', author: 'Seneca', portrait: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Portrait_of_Seneca_%28y_%C3%B3leo_sobre_lienzo%2C_1675-1715%29.jpg/220px-Portrait_of_Seneca_%28y_%C3%B3leo_sobre_lienzo%2C_1675-1715%29.jpg' },
+  { id: 'fb-02', content: 'The happiness of your life depends upon the quality of your thoughts.', translation: '你一生的幸福，取决于你思想的质量。', author: 'Marcus Aurelius', portrait: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Marcus_Aurelius_Glyptothek_Munich.jpg/220px-Marcus_Aurelius_Glyptothek_Munich.jpg' },
+  { id: 'fb-03', content: 'No man is free who is not master of himself.', translation: '不能掌握自己的人，谈不上自由。', author: 'Epictetus', portrait: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Epicteti_Enchiridion_Latinis_versibus_adumbratum_%28Oxford_1715%29_frontispiece.jpg/220px-Epicteti_Enchiridion_Latinis_versibus_adumbratum_%28Oxford_1715%29_frontispiece.jpg' },
+  { id: 'fb-04', content: 'He who has a why to live can bear almost any how.', translation: '知道为何而活的人，几乎可以承受任何一种生活方式。', author: 'Friedrich Nietzsche', portrait: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Nietzsche187a.jpg/220px-Nietzsche187a.jpg' },
+  { id: 'fb-05', content: 'The unexamined life is not worth living.', translation: '未经省察的人生，不值得过。', author: 'Socrates', portrait: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Socrate_du_Louvre.jpg/220px-Socrate_du_Louvre.jpg' },
+  { id: 'fb-06', content: 'Nature does not hurry, yet everything is accomplished.', translation: '大自然从不匆忙，但一切都能完成。', author: 'Laozi', portrait: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Portrait_of_Laozi_%28Taoism%29.jpg/220px-Portrait_of_Laozi_%28Taoism%29.jpg' },
+  { id: 'fb-07', content: 'Knowing yourself is the beginning of all wisdom.', translation: '认识自己，是一切智慧的开端。', author: 'Aristotle', portrait: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aristotle_Met_03.jpg/220px-Aristotle_Met_03.jpg' },
+  { id: 'fb-08', content: 'The whole future lies in uncertainty: live immediately.', translation: '整个未来都在不确定之中，所以请立刻生活。', author: 'Seneca', portrait: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Portrait_of_Seneca_%28y_%C3%B3leo_sobre_lienzo%2C_1675-1715%29.jpg/220px-Portrait_of_Seneca_%28y_%C3%B3leo_sobre_lienzo%2C_1675-1715%29.jpg' },
+  { id: 'fb-09', content: 'It is not length of life, but depth of life.', translation: '人生重要的不是长度，而是深度。', author: 'Ralph Waldo Emerson', portrait: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Ralph_Waldo_Emerson_ca1857.jpg/220px-Ralph_Waldo_Emerson_ca1857.jpg' },
+  { id: 'fb-10', content: 'The soul becomes dyed with the color of its thoughts.', translation: '灵魂会染上它所思之物的颜色。', author: 'Marcus Aurelius', portrait: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Marcus_Aurelius_Glyptothek_Munich.jpg/220px-Marcus_Aurelius_Glyptothek_Munich.jpg' }
 ];
 
 /* ---- Global State ---- */
@@ -534,24 +534,34 @@ async function buildDailyQuoteDeck() {
 
 function renderQuoteSlide(index) {
   const quote = activeQuoteDeck[index];
-  const shell = document.getElementById('quote-shell');
+  const stage = document.getElementById('quote-stage');
   const dots = document.getElementById('quote-dots');
-  if (!quote || !shell) return;
-
+  const portraitEl = document.getElementById('quote-portrait');
+  if (!quote || !stage) return;
   activeQuoteIndex = index;
-  shell.classList.remove('quote-fade');
-  void shell.offsetWidth; // Trigger reflow
-  shell.classList.add('quote-fade');
 
-  shell.innerHTML = `
-    <div class="quote-stage">
-      <div class="quote-copy-block">
-        <div class="quote-original">${escapeHTML(quote.content)}</div>
-        <div class="quote-translation">${escapeHTML(quote.translation)}</div>
-        <div class="quote-author">${escapeHTML(quote.author)}</div>
-      </div>
-    </div>
-  `;
+  const textHtml = `
+    <div class="quote-copy-block">
+      <div class="quote-original">${escapeHTML(quote.content)}</div>
+      <div class="quote-translation">${escapeHTML(quote.translation)}</div>
+      <div class="quote-author">${escapeHTML(quote.author)}</div>
+    </div>`;
+
+  const portraitHtml = quote.portrait
+    ? `<div class="quote-portrait-img-wrap"><img class="quote-portrait-img" src="${escapeHTML(quote.portrait)}" alt="${escapeHTML(quote.author)}" loading="lazy"></div>`
+    : '';
+
+  stage.style.opacity = '0';
+  stage.style.transform = 'translateY(8px)';
+  portraitEl.style.opacity = '0';
+
+  setTimeout(() => {
+    stage.innerHTML = textHtml;
+    portraitEl.innerHTML = portraitHtml;
+    stage.style.opacity = '1';
+    stage.style.transform = 'translateY(0)';
+    portraitEl.style.opacity = '1';
+  }, 50);
 
   if (dots) {
     dots.innerHTML = activeQuoteDeck.map((item, i) =>
@@ -572,7 +582,7 @@ function startQuoteRotation() {
   if (activeQuoteDeck.length < 2) return;
   quoteRotationTimer = setInterval(() => {
     showQuoteSlide(activeQuoteIndex + 1);
-  }, 22000);
+  }, 6000);
 }
 
 async function hydrateQuoteHero() {
@@ -782,6 +792,7 @@ function buildDashboard() {
       <section class="lead-card" aria-label="每日名言">
         <div class="quote-hero">
           <div class="quote-shell" id="quote-shell">
+            <div class="quote-portrait" id="quote-portrait"></div>
             <div class="quote-stage">
               <div class="quote-copy-block">
                 <div class="quote-original">正在为今天挑选一句值得慢慢读的话。</div>
